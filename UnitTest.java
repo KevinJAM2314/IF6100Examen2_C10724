@@ -16,10 +16,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author Estudiantes
- */
 public class UnitTest {
     
     public UnitTest() {
@@ -80,6 +76,11 @@ public class UnitTest {
     public void testDivision(){
        OperacionAritmetica context = new OperacionAritmetica( new Division() );
        assertNotEquals(context.procesar(10,2), -3);
+    }
+
+    public void testDivision2(){
+       OperacionAritmetica context = new OperacionAritmetica( new Division() );
+       assertNotEquals(context.procesar(0,5), -3);
     }
     
     public void testNotMultiplicacion(){
